@@ -30,14 +30,16 @@
     />
     <button class="bordered" on:click={addToList}>Add</button>
   </div>
-  <div class="item_container">
+  <div class="items_container">
     {#each todoList as item, index}
-      <div class="item">
-        <span class:checked={item.status}>{item.text}</span>
+      <div class="item_container">
+        <div class="item">
+          <span class:checked={item.status}>{item.text}</span>
+        </div>
 
         <div class="options">
           <div>
-            <input bind:checked={item.status} type="checkbox" />
+            <input type="checkbox" />
             <span>Done</span>
           </div>
           <span id="delete" on:click={() => removeFromList(index)}
@@ -52,6 +54,13 @@
 <style>
   h1 {
     border-bottom: 10px solid #f9dd94;
+  }
+
+  .item_container {
+    margin: 5px;
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+    padding: 5px;
   }
 
   .checked {
@@ -99,6 +108,9 @@
   }
 
   .item_container {
+  }
+
+  .items_container {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -108,7 +120,7 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .item_container {
+    .items_container {
       grid-template-columns: repeat(1, 1fr);
     }
   }

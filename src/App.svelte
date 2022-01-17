@@ -1,22 +1,30 @@
 <script lang="ts">
   /* import Footer from "./components/Footer.svelte"; */
 
-  let newItem = "";
-  let todoList = [];
+  import todos, { storeKey } from "./store.js";
 
-  function addToList() {
+  let newItem = "";
+  let todoList = todos;
+
+  function updateLocalStorage() {
+    localStorage.setItem(storeKey, JSON.stringify(todoList));
+  }
+
+  function updateList() {
     if (newItem === "") return;
     todoList = [...todoList, { text: newItem, status: false }];
     newItem = "";
+    updateLocalStorage();
   }
 
   const onKeyPress = (e: KeyboardEvent) => {
-    if (e.key === "Enter") addToList();
+    if (e.key === "Enter") updateList();
   };
 
   function removeFromList(index: number) {
     todoList.splice(index, 1);
     todoList = todoList;
+    updateLocalStorage();
   }
 </script>
 
@@ -30,7 +38,7 @@
       type="text"
       placeholder="Add a new task"
     />
-    <button class="bordered" on:click={addToList}>Add</button>
+    <button class="bordered" on:click={updateList}>Add</button>
   </div>
   <div class="items_container">
     {#each todoList as item, index}

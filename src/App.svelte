@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Footer from "./components/Footer.svelte";
+
   let newItem = "";
   let todoList = [];
 
@@ -48,6 +50,10 @@
         </div>
       </div>
     {/each}
+  </div>
+
+  <div class="footer">
+    <Footer />
   </div>
 </main>
 
@@ -107,9 +113,6 @@
     cursor: pointer;
   }
 
-  .item_container {
-  }
-
   .items_container {
     margin-top: 20px;
     display: grid;
@@ -117,11 +120,20 @@
     gap: 10px;
     padding: 0;
     border: 10px solid #f1f1f1;
+    margin-bottom: 30%;
+  }
+
+  .footer {
+    margin-top: 5%;
   }
 
   @media only screen and (max-width: 600px) {
     .items_container {
       grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 120%;
+    }
+    .footer {
+      margin-top: 10%;
     }
   }
 </style>

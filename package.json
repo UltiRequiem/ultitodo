@@ -4,6 +4,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "lint": "eslint . &&  prettier --check .",
+    "format": "prettier --write .",
     "start": "sirv public --no-clear",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
@@ -15,6 +17,7 @@
     "@typescript-eslint/parser": "^5.9.1",
     "eslint": "^8.6.0",
     "eslint-plugin-svelte3": "^3.3.0",
+    "prettier": "^2.5.1",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -27,8 +30,6 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "firebase": "^9.6.3",
-    "firebaseui": "^6.0.0",
     "sirv-cli": "^2.0.0"
   }
 }

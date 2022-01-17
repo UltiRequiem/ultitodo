@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Footer from "./components/Footer.svelte";
+  /* import Footer from "./components/Footer.svelte"; */
 
   let newItem = "";
   let todoList = [];
@@ -54,10 +54,6 @@
       </div>
     {/each}
   </div>
-
-  <div class="footer">
-    <Footer />
-  </div>
 </main>
 
 <style>
@@ -81,7 +77,7 @@
   .bordered {
     border-radius: 10px;
     border-style: none;
-    border: 1px solid #ccc;
+    border: 1px solid #f5f5f5;
     padding: 10px;
   }
 
@@ -96,12 +92,10 @@
   }
 
   .item {
-    margin: 5%;
     display: inline-block;
     width: 90%;
-    border: 1px solid #ccc;
+    border: 4px solid #f5f5f5;
     border-radius: 5px;
-    padding: 3%;
     overflow: auto;
     word-wrap: break-word;
     height: 200px;
@@ -119,20 +113,11 @@
     gap: 10px;
     padding: 0;
     border: 10px solid #f1f1f1;
-    margin-bottom: 30%;
-  }
-
-  .footer {
-    margin-top: 5%;
   }
 
   @media only screen and (max-width: 600px) {
     .items_container {
       grid-template-columns: repeat(1, 1fr);
-      margin-bottom: 120%;
-    }
-    .footer {
-      margin-top: 10%;
     }
   }
 </style>

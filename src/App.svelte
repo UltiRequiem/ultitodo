@@ -34,14 +34,17 @@
   </div>
   <div class="items_container">
     {#each todoList as item, index}
-      <div class="item_container">
+      <div
+        class="item_container"
+        style="border-color:{item.status ? 'blue' : 'lightseagreen'}"
+      >
         <div class="item">
-          <span class:checked={item.status}>{item.text}</span>
+          <span>{item.text}</span>
         </div>
 
         <div class="options">
           <div>
-            <input type="checkbox" />
+            <input type="checkbox" bind:checked={item.status} />
             <span>Done</span>
           </div>
           <span id="delete" on:click={() => removeFromList(index)}
@@ -67,10 +70,6 @@
     border: 1px solid lightseagreen;
     border-radius: 5px;
     padding: 5px;
-  }
-
-  .checked {
-    text-decoration: line-through;
   }
 
   .options {

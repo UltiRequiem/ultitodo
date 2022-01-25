@@ -1,6 +1,6 @@
 # UltiTodo App
 
-> A simple to-do list in memory
+> A simple to-do list with permanent storage
 
 ### Desktop interface
 

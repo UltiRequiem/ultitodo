@@ -16,7 +16,13 @@
 
 You can visit the Demo on:
 
+- GH Pages:
+
 > https://ultirequiem.github.io/ultitodo
+
+- Cloudfare Pages:
+
+> https://ultitodo.pages.dev
 
 ## Project Characteristic
 

@@ -1,32 +1,22 @@
-# UltiTodo App
+# UltiTodo
 
-> A simple to-do list with permanent storage
-
-### Desktop interface
-
-![Desktop Screenshot](./screenshots/v0.1.0_desktop.png)
-
-### Mobile View
-
-<div align="center">
-  <img src="./screenshots/v0.1.0_mobile.png" />
-</div>
+A simple to-do list with permanent storage 🚀
 
 ## Demo
 
-You can visit the Demo on:
+You can visit the Demo on
 
-- GH Pages:
+### GH Pages 🐱
 
-> https://ultirequiem.github.io/ultitodo
+https://todo.ultirequiem.com
 
-- Cloudfare Pages:
+### Cloudfare Pages 👷‍♀️
 
-> https://ultitodo.pages.dev
+https://ultitodo.pages.dev
 
 ## Project Characteristic
 
-- Has CD && CI
+- Continuous integration and deployment
 
 - Uses Svelte && TypeScript
 

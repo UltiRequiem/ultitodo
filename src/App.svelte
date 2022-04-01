@@ -1,5 +1,6 @@
 <script lang="ts" type="module">
   import todos, { storeKey } from "./store";
+  import Footer from "./components/Footer.svelte";
 
   let newItem = "";
   let todoList = todos;
@@ -60,6 +61,8 @@
       </div>
     {/each}
   </div>
+
+  <Footer />
 </main>
 
 <style>

@@ -4,11 +4,15 @@
 </script>
 
 <footer>
-  <p>© {copyrightYear} Eliaz Bobadilla</p>
+  <p>
+    © {copyrightYear}
+    <a href="https://ultirequiem.com">Eliaz Bobadilla (a.k.a UltiRequiem) </a>
+  </p>
 </footer>
 
 <style>
   footer {
+    margin-top: 10px;
     background-color: #f5f5f5;
     text-align: center;
     padding: 1px;

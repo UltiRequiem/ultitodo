@@ -3,7 +3,8 @@
   "include": ["src/**/*"],
   "compilerOptions": {
     "target": "ESNext",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "sourceMap": true
   },
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }

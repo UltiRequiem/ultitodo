@@ -1,7 +1,5 @@
-<script lang="ts">
-  /* import Footer from "./components/Footer.svelte"; */
-
-  import todos, { storeKey } from "./store.js";
+<script lang="ts" type="module">
+  import todos, { storeKey } from "./store";
 
   let newItem = "";
   let todoList = todos;

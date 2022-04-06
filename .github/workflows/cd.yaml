@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
-      - run: yarn && yarn build && echo todo.ultirequiem >> public/CNAME
+      - run: yarn && yarn build && echo todo.ultirequiem.com >> public/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

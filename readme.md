@@ -8,7 +8,7 @@ A simple to-do list with permanent local storage 🚀
 
 https://todo.ultirequiem.com
 
-### Cloudfare Pages 👷‍♀️
+### Cloudflare Pages 👷‍♀️
 
 https://ultitodo.pages.dev
 

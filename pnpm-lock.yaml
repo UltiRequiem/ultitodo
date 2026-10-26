@@ -186,7 +186,7 @@ importers:
         version: 8.6.0(supports-color@7.2.0)
       eslint-plugin-svelte3:
         specifier: ^3.3.0
-        version: 3.3.0(eslint@8.6.0(supports-color@7.2.0))(svelte@3.49.0)
+        version: 3.3.0(eslint@8.6.0(supports-color@7.2.0))(svelte@3.59.2)
       prettier:
         specifier: ^2.5.1
         version: 2.5.1
@@ -201,7 +201,7 @@ importers:
         version: 2.0.5
       rollup-plugin-svelte:
         specifier: ^7.0.0
-        version: 7.1.0(rollup@2.80.0)(svelte@3.49.0)
+        version: 7.1.0(rollup@2.80.0)(svelte@3.59.2)
       rollup-plugin-terser:
         specifier: ^7.0.0
         version: 7.0.2(rollup@2.80.0)
@@ -209,14 +209,14 @@ importers:
         specifier: ^2.0.0
         version: 2.0.1
       svelte:
-        specifier: ^3.49.0
-        version: 3.49.0
+        specifier: ^3.59.2
+        version: 3.59.2
       svelte-check:
         specifier: ^2.0.0
-        version: 2.2.12(svelte@3.49.0)
+        version: 2.2.12(svelte@3.59.2)
       svelte-preprocess:
         specifier: ^4.0.0
-        version: 4.10.1(svelte@3.49.0)(typescript@4.9.5)
+        version: 4.10.1(svelte@3.59.2)(typescript@4.9.5)
       tslib:
         specifier: ^2.0.0
         version: 2.3.1
@@ -1088,8 +1088,8 @@ packages:
       typescript:
         optional: true
 
-  svelte@3.49.0:
-    resolution: {integrity: sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==}
+  svelte@3.59.2:
+    resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
     engines: {node: '>= 8'}
 
   terser@5.14.2:
@@ -1504,10 +1504,10 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-svelte3@3.3.0(eslint@8.6.0(supports-color@7.2.0))(svelte@3.49.0):
+  eslint-plugin-svelte3@3.3.0(eslint@8.6.0(supports-color@7.2.0))(svelte@3.59.2):
     dependencies:
       eslint: 8.6.0(supports-color@7.2.0)
-      svelte: 3.49.0
+      svelte: 3.59.2
 
   eslint-scope@5.1.1:
     dependencies:
@@ -1880,12 +1880,12 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  rollup-plugin-svelte@7.1.0(rollup@2.80.0)(svelte@3.49.0):
+  rollup-plugin-svelte@7.1.0(rollup@2.80.0)(svelte@3.59.2):
     dependencies:
       require-relative: 0.8.7
       rollup: 2.80.0
       rollup-pluginutils: 2.8.2
-      svelte: 3.49.0
+      svelte: 3.59.2
 
   rollup-plugin-terser@7.0.2(rollup@2.80.0):
     dependencies:
@@ -1993,7 +1993,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@2.2.12(svelte@3.49.0):
+  svelte-check@2.2.12(svelte@3.59.2):
     dependencies:
       chokidar: 3.5.2
       fast-glob: 3.2.10
@@ -2002,8 +2002,8 @@ snapshots:
       picocolors: 1.0.0
       sade: 1.8.1
       source-map: 0.7.3
-      svelte: 3.49.0
-      svelte-preprocess: 4.10.1(svelte@3.49.0)(typescript@4.9.5)
+      svelte: 3.59.2
+      svelte-preprocess: 4.10.1(svelte@3.59.2)(typescript@4.9.5)
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -2017,7 +2017,7 @@ snapshots:
       - stylus
       - sugarss
 
-  svelte-preprocess@4.10.1(svelte@3.49.0)(typescript@4.9.5):
+  svelte-preprocess@4.10.1(svelte@3.59.2)(typescript@4.9.5):
     dependencies:
       '@types/pug': 2.0.6
       '@types/sass': 1.43.1
@@ -2025,11 +2025,11 @@ snapshots:
       magic-string: 0.25.7
       sorcery: 0.10.0
       strip-indent: 3.0.0
-      svelte: 3.49.0
+      svelte: 3.59.2
     optionalDependencies:
       typescript: 4.9.5
 
-  svelte@3.49.0: {}
+  svelte@3.59.2: {}
 
   terser@5.14.2:
     dependencies:

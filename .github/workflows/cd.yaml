@@ -6,9 +6,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
-      - run: yarn && yarn build && echo todo.ultirequiem.com >> public/CNAME
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+      - run: yarn && pnpm run build && echo todo.ultirequiem.com >> public/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

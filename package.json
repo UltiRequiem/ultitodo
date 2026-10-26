@@ -17,7 +17,7 @@
     "@typescript-eslint/parser": "^5.9.1",
     "eslint": "^8.6.0",
     "eslint-plugin-svelte3": "^3.3.0",
-    "prettier": "^2.5.1",
+    "prettier": "^3.9.10",
     "rollup": "^2.80.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",

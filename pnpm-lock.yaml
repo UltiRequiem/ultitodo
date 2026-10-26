@@ -173,8 +173,8 @@ importers:
         specifier: ^8.0.0
         version: 8.3.0(rollup@2.80.0)(tslib@2.3.1)(typescript@4.9.5)
       '@tsconfig/svelte':
-        specifier: ^2.0.0
-        version: 2.0.1
+        specifier: ^5.0.8
+        version: 5.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.9.1
         version: 5.9.1(@typescript-eslint/parser@5.9.1(eslint@8.6.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@4.9.5))(eslint@8.6.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@4.9.5)
@@ -311,8 +311,8 @@ packages:
     resolution: {integrity: sha512-ROn4qvkxP9SyPeHaf7uQC/GPFY6L/OWy9+bd9AwcjOAWQwxRscoEyAUD8qCY5o5iL4jqQwoLk2kaTKJPb/HwzQ==}
     engines: {node: '>= 8.0.0'}
 
-  '@tsconfig/svelte@2.0.1':
-    resolution: {integrity: sha512-aqkICXbM1oX5FfgZd2qSSAGdyo/NRxjWCamxoyi3T8iVQnzGge19HhDYzZ6NrVOW7bhcWNSq9XexWFtMzbB24A==}
+  '@tsconfig/svelte@5.0.8':
+    resolution: {integrity: sha512-UkNnw1/oFEfecR8ypyHIQuWYdkPvHiwcQ78sh+ymIiYoF+uc5H1UBetbjyqT+vgGJ3qQN6nhucJviX6HesWtKQ==}
 
   '@types/estree@0.0.39':
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
@@ -1274,7 +1274,7 @@ snapshots:
       estree-walker: 2.0.2
       picomatch: 2.3.1
 
-  '@tsconfig/svelte@2.0.1': {}
+  '@tsconfig/svelte@5.0.8': {}
 
   '@types/estree@0.0.39': {}
 

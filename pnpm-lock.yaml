@@ -194,8 +194,8 @@ importers:
         specifier: ^2.80.0
         version: 2.80.0
       rollup-plugin-css-only:
-        specifier: ^3.1.0
-        version: 3.1.0(rollup@2.80.0)
+        specifier: ^4.5.5
+        version: 4.5.5(rollup@2.80.0)
       rollup-plugin-livereload:
         specifier: ^2.0.0
         version: 2.0.5
@@ -307,15 +307,23 @@ packages:
     peerDependencies:
       rollup: ^1.20.0||^2.0.0
 
-  '@rollup/pluginutils@4.1.2':
-    resolution: {integrity: sha512-ROn4qvkxP9SyPeHaf7uQC/GPFY6L/OWy9+bd9AwcjOAWQwxRscoEyAUD8qCY5o5iL4jqQwoLk2kaTKJPb/HwzQ==}
-    engines: {node: '>= 8.0.0'}
+  '@rollup/pluginutils@5.5.1':
+    resolution: {integrity: sha512-P9ZvnfouRu4MSC+ilERaw6FmZs8zqKhpHxEs4aGDGWQAMzQGXnhvCSvoNwokfNvdt7t3Y5Y4p6gStQgezeIqug==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
 
   '@tsconfig/svelte@2.0.1':
     resolution: {integrity: sha512-aqkICXbM1oX5FfgZd2qSSAGdyo/NRxjWCamxoyi3T8iVQnzGge19HhDYzZ6NrVOW7bhcWNSq9XexWFtMzbB24A==}
 
   '@types/estree@0.0.39':
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
+
+  '@types/estree@1.0.9':
+    resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
   '@types/json-schema@7.0.9':
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
@@ -866,6 +874,10 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
+    engines: {node: '>=12'}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -922,11 +934,11 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  rollup-plugin-css-only@3.1.0:
-    resolution: {integrity: sha512-TYMOE5uoD76vpj+RTkQLzC9cQtbnJNktHPB507FzRWBVaofg7KhIqq1kGbcVOadARSozWF883Ho9KpSPKH8gqA==}
-    engines: {node: '>=10.12.0'}
+  rollup-plugin-css-only@4.5.5:
+    resolution: {integrity: sha512-O2m2Sj8qsAtjUVqZyGTDXJypaOFFNV4knz8OlS6wJBws6XEICIiLsXmI56SbQEmWDqYU5TgRgWmslGj4THofJQ==}
+    engines: {node: '>=14'}
     peerDependencies:
-      rollup: 1 || 2
+      rollup: <5
 
   rollup-plugin-livereload@2.0.5:
     resolution: {integrity: sha512-vqQZ/UQowTW7VoiKEM5ouNW90wE5/GZLfdWuR0ELxyKOJUIaj+uismPZZaICU4DnWPVjnpCDDxEqwU7pcKY/PA==}
@@ -1269,14 +1281,19 @@ snapshots:
       picomatch: 2.3.1
       rollup: 2.80.0
 
-  '@rollup/pluginutils@4.1.2':
+  '@rollup/pluginutils@5.5.1(rollup@2.80.0)':
     dependencies:
+      '@types/estree': 1.0.9
       estree-walker: 2.0.2
-      picomatch: 2.3.1
+      picomatch: 4.0.7
+    optionalDependencies:
+      rollup: 2.80.0
 
   '@tsconfig/svelte@2.0.1': {}
 
   '@types/estree@0.0.39': {}
+
+  '@types/estree@1.0.9': {}
 
   '@types/json-schema@7.0.9': {}
 
@@ -1828,6 +1845,8 @@ snapshots:
 
   picomatch@2.3.1: {}
 
+  picomatch@4.0.7: {}
+
   prelude-ls@1.2.1: {}
 
   prettier@2.5.1: {}
@@ -1868,9 +1887,9 @@ snapshots:
     dependencies:
       glob: 7.2.0
 
-  rollup-plugin-css-only@3.1.0(rollup@2.80.0):
+  rollup-plugin-css-only@4.5.5(rollup@2.80.0):
     dependencies:
-      '@rollup/pluginutils': 4.1.2
+      '@rollup/pluginutils': 5.5.1(rollup@2.80.0)
       rollup: 2.80.0
 
   rollup-plugin-livereload@2.0.5:

@@ -206,8 +206,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.2(rollup@2.80.0)
       sirv-cli:
-        specifier: ^2.0.0
-        version: 2.0.1
+        specifier: ^3.0.1
+        version: 3.0.1
       svelte:
         specifier: ^3.59.2
         version: 3.59.2
@@ -284,8 +284,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@polka/url@1.0.0-next.21':
-    resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
+  '@polka/url@1.0.0-next.29':
+    resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
   '@rollup/plugin-node-resolve@13.1.3':
     resolution: {integrity: sha512-BdxNk+LtmElRo5d06MGY4zoepyrXX1tkzX2hrnPEZ53k78GuOMWLqmJDGIIOPwVRIFZrLQOo+Yr6KtCuLIA0AQ==}
@@ -682,9 +682,9 @@ packages:
   functional-red-black-tree@1.0.1:
     resolution: {integrity: sha512-dsKNQNdj6xA3T+QlADDA7mOSlX0qiMINjn0cgr+eGHGsbSHzTabcIogz2+p/iqP1Xs6EP/sS2SbqH+brGTbq0g==}
 
-  get-port@3.2.0:
-    resolution: {integrity: sha512-x5UJKlgeUiNT8nyo/AcnwLnZuZNcSjSw0kogRB+Whd1fjjFq4B1hySFxSFWWSn4mIBzg3sRNUDFYc4g5gjPoLg==}
-    engines: {node: '>=4'}
+  get-port@5.1.1:
+    resolution: {integrity: sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==}
+    engines: {node: '>=8'}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -853,8 +853,8 @@ packages:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
 
-  mrmime@1.0.0:
-    resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}
+  mrmime@2.0.1:
+    resolution: {integrity: sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==}
     engines: {node: '>=10'}
 
   ms@2.1.2:
@@ -1032,14 +1032,14 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  sirv-cli@2.0.1:
-    resolution: {integrity: sha512-QuPr005HRybjSJxTBz0kFLNme3qSoged8cfb+fvXhpZieDPNWWqKm8ApYUM0r0VtieG+92dfdHm1Ip9CCoZECw==}
-    engines: {node: '>= 10'}
+  sirv-cli@3.0.1:
+    resolution: {integrity: sha512-ICXaF2u6IQhLZ0EXF6nqUF4YODfSQSt+mGykt4qqO5rY+oIiwdg7B8w2PVDBJlQulaS2a3J8666CUoDoAuCGvg==}
+    engines: {node: '>=18'}
     hasBin: true
 
-  sirv@2.0.0:
-    resolution: {integrity: sha512-TT+4+zSM9LR8soWT5/4gOYHfB5a5XEOSV2LtmBRN5MUxi8kh7BSRGuoRYjeBaqhR4w+yx+k6t0OibDNgoLfF7w==}
-    engines: {node: '>= 10'}
+  sirv@3.0.2:
+    resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
+    engines: {node: '>=18'}
 
   slash@3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
@@ -1154,8 +1154,8 @@ packages:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
 
-  totalist@2.0.0:
-    resolution: {integrity: sha512-+Y17F0YzxfACxTyjfhnJQEe7afPA0GSpYlFkl2VFMxYP7jshQf9gXV7cH47EfToBumFThfKBvfAcoUn6fdNeRQ==}
+  totalist@3.0.1:
+    resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
 
   tslib@1.14.1:
@@ -1288,7 +1288,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
-  '@polka/url@1.0.0-next.21': {}
+  '@polka/url@1.0.0-next.29': {}
 
   '@rollup/plugin-node-resolve@13.1.3(rollup@2.80.0)':
     dependencies:
@@ -1703,7 +1703,7 @@ snapshots:
 
   functional-red-black-tree@1.0.1: {}
 
-  get-port@3.2.0: {}
+  get-port@5.1.1: {}
 
   glob-parent@5.1.2:
     dependencies:
@@ -1861,7 +1861,7 @@ snapshots:
 
   mri@1.2.0: {}
 
-  mrmime@1.0.0: {}
+  mrmime@2.0.1: {}
 
   ms@2.1.2: {}
 
@@ -2017,22 +2017,22 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  sirv-cli@2.0.1:
+  sirv-cli@3.0.1:
     dependencies:
       console-clear: 1.1.1
-      get-port: 3.2.0
+      get-port: 5.1.1
       kleur: 4.1.4
       local-access: 1.1.0
       sade: 1.8.1
       semiver: 1.1.0
-      sirv: 2.0.0
+      sirv: 3.0.2
       tinydate: 1.3.0
 
-  sirv@2.0.0:
+  sirv@3.0.2:
     dependencies:
-      '@polka/url': 1.0.0-next.21
-      mrmime: 1.0.0
-      totalist: 2.0.0
+      '@polka/url': 1.0.0-next.29
+      mrmime: 2.0.1
+      totalist: 3.0.1
 
   slash@3.0.0: {}
 
@@ -2127,7 +2127,7 @@ snapshots:
     dependencies:
       is-number: 7.0.0
 
-  totalist@2.0.0: {}
+  totalist@3.0.1: {}
 
   tslib@1.14.1: {}
 
